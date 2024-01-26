@@ -20,6 +20,13 @@ public class FizzBuzzTests
     }
 
     [Test]
+    public void GetOutput_WithIntDivisibleByThreeAndFive_ReturnNumberToString()
+    {
+        var result = FizzBuzz.GetOutput(15);
+        Assert.That(result, Is.EqualTo("FizzBuzz"));
+    }
+
+    [Test]
     public void GetOutput_WithIntNotDivisibleByThreeAndFive_ReturnNumberToString()
     {
         var result = FizzBuzz.GetOutput(4);
